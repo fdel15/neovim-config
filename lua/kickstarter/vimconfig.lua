@@ -92,5 +92,13 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 -- Keybinds to resize windows
 vim.keymap.set("n", "<leader>jj", ":resize +10 <CR>", { desc = "Resize height +10" })
 vim.keymap.set("n", "<leader>jk", ":resize -10 <CR>", { desc = "Resize height -10" })
-vim.keymap.set("n", "<leader>jf", ":vertical resize -20 <CR>", { desc = "Resize width -10" })
-vim.keymap.set("n", "<leader>jd", ":vertical resize +20 <CR>", { desc = "Resize width +10" })
+vim.keymap.set("n", "<leader>jh", ":vertical resize -20 <CR>", { desc = "Resize width -10" })
+vim.keymap.set("n", "<leader>jl", ":vertical resize +20 <CR>", { desc = "Resize width +10" })
+
+-- keybinds to move windows
+vim.keymap.set("n", "<leader>mj", "<C-w>J", { desc = "Move current window to bottom" })
+vim.keymap.set("n", "<leader>mk", "<C-w>K", { desc = "Move current window to top" })
+vim.keymap.set("n", "<leader>mh", "<C-w>H", { desc = "Move current window to left" })
+vim.keymap.set("n", "<leader>ml", "<C-w>L", { desc = "Move current window to right" })
+vim.keymap.set("n", "<leader>kk", "<C-w>_", { desc = "Max current window height" })
+vim.keymap.set("n", "<leader>kj", "<C-w>|", { desc = "Max current window width" })
