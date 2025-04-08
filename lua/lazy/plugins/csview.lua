@@ -38,11 +38,4 @@ return {
 		},
 	},
 	cmd = { "CsvViewEnable", "CsvViewDisable", "CsvViewToggle" },
-
-	-- color codes csv columns
-	{
-		"cameron-wags/rainbow_csv.nvim",
-		config = true,
-		ft = "csv",
-	},
 }
